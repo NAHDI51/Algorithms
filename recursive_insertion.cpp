@@ -17,7 +17,7 @@ void insert(vector<int>& v, int len, int element) {
 void insertion_sort(vector<int>& v, int len) {
     if(len == v.size()) len--;
 
-    if(len != 1) {
+    if(len != 0) {
         insertion_sort(v, len-1);
         insert(v, len-1, v[len]);
     }
