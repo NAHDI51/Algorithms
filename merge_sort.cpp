@@ -70,7 +70,7 @@ void merge_sort(vector<int>& A, int p, int r) {
         int q = avg(p, r);
         merge_sort(A, p, q);
         merge_sort(A, q+1 ,r);
-        merge_2(A, p, q, r);
+        merge(A, p, q, r);
     }
 }
 
